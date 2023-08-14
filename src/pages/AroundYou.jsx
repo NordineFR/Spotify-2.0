@@ -22,7 +22,6 @@ const AroundYou = () =>{
           });
         }
       }, [ListData, country]);
-    // console.log(datacountry);
     useEffect(() => {
         axios.get(`https://geo.ipify.org/api/v2/country?apiKey=at_WIkiR2sx1IBkIzXZ8srqfP49D7S8j`)
         .then((res)=>setCountry(res?.data?.location?.country))
@@ -34,10 +33,7 @@ const AroundYou = () =>{
         return <Loader title="Loading songs around you" />;
     }
     if(error && country) return <Error />;
-    
-    // (data?.countries)?.map((countrydata)=>{
-    //     if(countrydata.id == country) setDataCountry(countrydata);
-    // })
+
 
     return (
         <div className="flex flex-col">
