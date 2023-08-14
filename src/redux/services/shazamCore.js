@@ -16,6 +16,8 @@ export const shazamCoreApi = createApi({
         getSongRelated:builder.query({query:(songid)=>`/songs/list-recommendations?key=${songid}`}),
         getArtistDetails:builder.query({query:(artistId)=>`/artists/get-details?id=${artistId}`}),
         getArtistTopSongs:builder.query({query:(artistId)=>`/artists/get-top-songs?id=${artistId}`}),
+        getChartList:builder.query({query:()=>'/charts/list'}),
+        getSongsByCountry:builder.query({query:(listid)=>`/charts/track?listId=${listid}`}),
     }),
 });
 
@@ -25,4 +27,6 @@ export const {
     useGetSongRelatedQuery,
     useGetArtistDetailsQuery,
     useGetArtistTopSongsQuery,
+    useGetChartListQuery,
+    useGetSongsByCountryQuery,
 }= shazamCoreApi;
