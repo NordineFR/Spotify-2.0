@@ -11,7 +11,7 @@ const AroundYou = () =>{
     const {activeSong,isPlaying} = useSelector((state)=>state.player);
     const {data:ListData,isFetching:isFetchingListData,errorlist} = useGetChartListQuery();
     const {data,isFetching,error} = useGetSongsByCountryQuery(listId.listid);
-    const apiKeyMap = import.meta.env.VITE_GEO_API_KEY;
+    const apiKeyMap = 'at_WIkiR2sx1IBkIzXZ8srqfP49D7S8j';
 
 
     useEffect(() => {
