@@ -11,6 +11,7 @@ const AroundYou = () =>{
     const {activeSong,isPlaying} = useSelector((state)=>state.player);
     const {data:ListData,isFetching:isFetchingListData,errorlist} = useGetChartListQuery();
     const {data,isFetching,error} = useGetSongsByCountryQuery(listId.listid);
+    const apiKeyMap = import.meta.env.VITE_GEO_API_KEY;
 
 
     useEffect(() => {
@@ -23,7 +24,7 @@ const AroundYou = () =>{
         }
       }, [ListData, country]);
     useEffect(() => {
-        axios.get(`https://geo.ipify.org/api/v2/country?apiKey=at_WIkiR2sx1IBkIzXZ8srqfP49D7S8j`)
+        axios.get(`https://geo.ipify.org/api/v2/country?apiKey=${apiKeyMap}`)
         .then((res)=>setCountry(res?.data?.location?.country))
         .catch((err)=>console.log(err))
         .finally(()=>setLoading(false))
