@@ -2,7 +2,7 @@
 
 Welcome to Spotify 2.0, an enhanced music discovery app built with React and Redux and Rapid Api (Shazam api). Explore your favorite tracks, artists, and genres like never before.
 
-![Preview](preview.png)
+![Preview](Spotify-2-0-preview.png)
 
 ## Preview
 Check out the live preview of the app: [Live Preview](https://nordinefr-spotify-v2.netlify.app/)
