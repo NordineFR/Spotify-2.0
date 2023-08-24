@@ -45,7 +45,10 @@ const TopPlay = () => {
   useEffect(() => {
     divRef.current.scrollIntoView({behavior:'smooth'}); 
   })
-
+  //if you want to make scroll to page top always
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // });
   const topPlays = (data?.tracks)?.slice(0, 5);
 
   const handlePauseClick = (song,i)=>{
