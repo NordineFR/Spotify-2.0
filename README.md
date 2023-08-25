@@ -1,10 +1,15 @@
-# Spotify 2.0
-
-Welcome to Spotify 2.0, an enhanced music discovery app built with React and Redux and Rapid Api (Shazam api). Explore your favorite tracks, artists, and genres like never before.
+<h1 align="center">Spotify 2.0</h1>
+<p align="center">Welcome to Spotify 2.0, an enhanced music discovery app built with React and Redux and Rapid Api (Shazam api). Explore your favorite tracks, artists, and genres like never before.</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" />
+  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 
 ![Preview](Spotify-2-0-preview.png)
 
-## Preview
+## Live Preview
 Check out the live preview of the app: [Live Preview](https://nordinefr-spotify-v2.netlify.app/)
 
 ## Table of Contents
