@@ -22,7 +22,6 @@ const SongDetails = () => {
     if(isFetchingRelatedSongs || isFetchingSongDetails) return <Loader title="Searching song details" />;
 
     if(error) return <Error />
-  
     return (
     <div className="flex flex-col">
         <DetailsHeader artistId="" songData={songData} />
@@ -37,8 +36,7 @@ const SongDetails = () => {
             </div>
         </div>
         {
-          songData.length === 0 && (        <RelatedSongs data={data} isPlaying={isPlaying} activeSong={activeSong} handlePauseClick={handlePauseClick} handlePlayClick={handlePlayClick} />
-)
+          Object.keys(data).length > 0 ? (<RelatedSongs data={data} isPlaying={isPlaying} activeSong={activeSong} handlePauseClick={handlePauseClick} handlePlayClick={handlePlayClick} />) : ''
         }
     </div>
   )  
