@@ -24,7 +24,7 @@ Follow these steps to get the app up and running on your local machine:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/spotify-2.0.git
+   git clone https://github.com/NordineFR/Spotify-2.0.git
    cd spotify-2.0
    ```
 2. Install the dependencies:
